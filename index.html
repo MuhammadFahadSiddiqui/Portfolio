@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Glowing effect for images */
+        .glowing-img {
+            box-shadow: 0 0 20px 5px rgba(50, 205, 50, 0.6); /* Lime glow */
+            transition: box-shadow 0.3s ease;
+        }
+
+        .glowing-img:hover {
+            box-shadow: 0 0 30px 10px rgba(50, 205, 50, 1); /* Intense glow on hover */
+        }
+    </style>
+</head>
+<body class="bg-lime-100 h-full w-full">
+
+<!-- NAVBAR -->
+<nav aria-label="Main navigation" class="bg-lime-700 p-4 shadow-lg">
+    <div class="container mx-auto flex flex-col lg:flex-row justify-between items-center">
+        <div class="text-white text-lg font-semibold mb-2 lg:mb-0">Fahad Siddique</div>
+        <button id="mobile-menu-button" class="block lg:hidden text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+        <ul id="mobile-menu" class="hidden lg:flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-6 text-white">
+            <li><a href="#home" class="hover:text-lime-300">Home</a></li>
+            <li><a href="#about" class="hover:text-lime-300">About</a></li>
+            <li><a href="#education" class="hover:text-lime-300">Education</a></li>
+            <li><a href="#skills" class="hover:text-lime-300">Skills</a></li>
+            <li><a href="#contact" class="hover:text-lime-300">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- HOME PAGE -->
+    <section id="home" class="flex flex-col md:flex-row items-center justify-center min-h-screen space-y-4 md:space-y-0 md:space-x-8">
+        <div class="text-center bg-white p-10 rounded-lg shadow-lg">
+            <h1 class="text-4xl font-bold mb-4">Hello Everyone!</h1>
+            <h2 class="text-3xl text-lime-600 font-semibold mb-2">I'm Muhammad Fahad Siddique</h2>
+            <p class="font-medium text-lg text-gray-700">I'm a Frontend developer, also a Student at Governor Initiative for Cloud Applied Generative AI.</p>
+        </div>
+        <div>
+            <img src="fahad.jpeg" alt="Fahad's Profile Picture" class="w-64 h-64 object-cover rounded-full glowing-img">
+        </div>
+    </section>
+<hr>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="md:ml-40 flex flex-col md:flex-row items-center justify-center min-h-screen space-y-4 md:space-y-0 md:space-x-8">
+    <div class="text-center bg-white p-10 rounded-lg shadow-lg w-full md:w-1/2 flex flex-col items-center">
+        <h1 class="text-4xl font-bold mb-4">Hi!</h1>
+        <h2 class="text-3xl text-lime-600 font-semibold mb-2">About Me!</h2>
+        <p class="text-lg text-gray-700 font-medium">
+            Fahad Siddique is a passionate Frontend Developer with expertise in building responsive and interactive web applications. With a strong foundation in HTML, CSS, JavaScript, and modern libraries like React.js and Tailwind CSS, Fahad is dedicated to creating user-friendly interfaces. Always eager to learn and embrace new challenges, Fahad focuses on clean, efficient code and continuously improving the user experience. Currently, Fahad is pursuing further education in the Governor Initiative for Cloud Applied Generative AI program, blending cutting-edge technologies with frontend development skills.
+        </p>
+        <div class="m-2 p-4 bg-lime-100 rounded shadow-lg transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg hover:shadow-lime-400">
+            <a href="#home" class="text-xl font-semibold">Read More</a>
+        </div>
+    </div>
+    <div class="w-full md:w-1/2 flex justify-center">
+        <img src="fahad.jpeg" alt="Fahad's Profile Picture" class="w-64 h-64 object-cover rounded-full glowing-img">
+    </div>
+</section>
+
+<hr>
+
+
+<!-- EDUCATION SECTION -->
+<section id="education" class="p-10 bg-white flex flex-col items-center">
+    <div class="education-list text-center w-full max-w-2xl">
+        <h2 class="text-3xl md:text-4xl font-bold mb-16 mt-16">MY <span class="text-lime-600">EDUCATION</span></h2>
+
+        <div class="mb-6 p-6 bg-lime-100 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+            <h3 class="text-2xl font-semibold">Naz Primary and Secondary School</h3>
+            <p class="text-lg text-gray-600">Year: 2020-2021</p>
+            <p class="text-lg text-gray-600">Field: Science (Biology)</p>
+        </div>
+
+        <div class="mb-6 p-6 bg-lime-100 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+            <h3 class="text-2xl font-semibold">City Government College</h3>
+            <p class="text-lg text-gray-600">Year: 2022-2023</p>
+            <p class="text-lg text-gray-600">Field: Commerce</p>
+        </div>
+
+        <div class="mb-6 p-6 bg-lime-100 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+            <h3 class="text-2xl font-semibold">GIAIC</h3>
+            <p class="text-lg text-gray-600">Field: AI</p>
+        </div>
+    </div>
+</section>
+<hr>
+
+
+
+
+
+    <!-- SKILLS SECTION -->
+<section id="skills" class="p-10 bg-white text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-16 mt-16">MY <span class="text-lime-600">SKILLS</span></h2>
+    <p class="text-lg text-gray-700 mb-4">I have expertise in the following technologies:</p>
+    <div class="flex justify-center flex-wrap">
+        <div class="m-2 p-4 bg-lime-100 rounded shadow-lg transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg hover:shadow-lime-400">
+            <h3 class="text-xl font-semibold">HTML</h3>
+        </div>
+        <div class="m-2 p-4 bg-lime-100 rounded shadow-lg transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg hover:shadow-lime-400">
+            <h3 class="text-xl font-semibold">CSS</h3>
+        </div>
+        <div class="m-2 p-4 bg-lime-100 rounded shadow-lg transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg hover:shadow-lime-400">
+            <h3 class="text-xl font-semibold">JavaScript</h3>
+        </div>
+        <div class="m-2 p-4 bg-lime-100 rounded shadow-lg transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg hover:shadow-lime-400">
+            <h3 class="text-xl font-semibold">TypeScript</h3>
+        </div>
+        <div class="m-2 p-4 bg-lime-100 rounded shadow-lg transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg hover:shadow-lime-400">
+            <h3 class="text-xl font-semibold">Tailwind CSS</h3>
+        </div>
+        <div class="m-2 p-4 bg-lime-100 rounded shadow-lg transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg hover:shadow-lime-400">
+            <h3 class="text-xl font-semibold">Next.js</h3>
+        </div>
+    </div>
+    <div class="mt-8">
+        <h3 class="text-3xl lg:text-4xl font-semibold mt-16 mb-16">FIND <span class="text-lime-600">ME</span> </h3>
+        <div class="flex justify-center mt-4 space-x-4">
+            <div class="m-2 p-4 bg-lime-100 rounded shadow-lg transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg hover:shadow-lime-400">
+                <a href="https://github.com/MuhammadFahadSiddiqui" class="text-xl font-semibold">GitHub</a>
+            </div>
+            <div class="m-2 p-4 bg-lime-100 rounded shadow-lg transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg hover:shadow-lime-400">
+                <a href="https://www.vercel.com/MuhammadFahadSiddiqui" class="text-xl font-semibold">Vercel</a>
+            </div>
+            <div class="m-2 p-4 bg-lime-100 rounded shadow-lg transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg hover:shadow-lime-400">
+                <a href="https://www.npmjs.com/MuhammadFahadSiddiqui" class="text-xl font-semibold">npm</a>
+            </div>
+        </div>
+    </div>
+   
+</section>
+
+<hr>
+   <!-- CONTACT SECTION -->
+<section id="contact" class="p-10 bg-lime-100 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-16 mt-16">CONTACT ME</h2>
+   
+
+    <div class="mt-6">
+        
+        <div class="flex justify-center flex-wrap mt-4">
+            <!-- Social Media Icons -->
+            
+            <a href="https://www.facebook.com/mohammad.fahad.581730?mibextid=ZbWKwL" class="m-2">
+                <i class="fab fa-facebook text-3xl text-gray-800 hover:text-lime-600 transition duration-300" aria-label="Facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/m_fahad_shahid" class="m-2">
+                <i class="fab fa-instagram text-3xl text-gray-800 hover:text-lime-600 transition duration-300" aria-label="Instagram"></i>
+            </a>
+            <a href="fahadsiddiqui879@gmail.com" class="m-2">
+                <i class="fas fa-envelope text-3xl text-gray-800 hover:text-lime-600 transition duration-300" aria-label="Email"></i>
+            </a>
+            <a href="https://pk.linkedin.com/in/muhammad-fahad-siddiqui-71a7392ba" class="m-2">
+                <i class="fab fa-linkedin text-3xl text-gray-800 hover:text-lime-600 transition duration-300" aria-label="LinkedIn"></i>
+            </a>
+        </div>
+    </div>
+
+   
+</section>
+
+
+
+    <!-- FOOTER -->
+    <footer class="bg-lime-700 text-white p-6 mt-10">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Fahad Siddique. All rights reserved.</p>
+          
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
